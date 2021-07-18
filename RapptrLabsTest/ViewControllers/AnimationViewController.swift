@@ -8,7 +8,11 @@
 import UIKit
 
 class AnimationViewController: UIViewController {
-
+    
+    // Declare the image embedded view and fadeInButton
+    @IBOutlet weak var rapptrLogoView: UIView!
+    @IBOutlet weak var fadeInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

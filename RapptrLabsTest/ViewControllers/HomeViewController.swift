@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var animationButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +38,5 @@ class HomeViewController: UIViewController {
     @IBAction func animationButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToAnimation", sender: self)
     }
-    
 }
 
