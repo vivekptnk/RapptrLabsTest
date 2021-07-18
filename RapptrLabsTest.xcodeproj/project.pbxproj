@@ -16,6 +16,10 @@
 		E315365726A38CB9002FFC5C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315365626A38CB9002FFC5C /* Message.swift */; };
 		E315365926A38CC2002FFC5C /* ChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315365826A38CC2002FFC5C /* ChatClient.swift */; };
 		E315365B26A38CCD002FFC5C /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315365A26A38CCD002FFC5C /* LoginClient.swift */; };
+		E3802C9426A4C85300FE7482 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3802C9326A4C85300FE7482 /* ChatViewController.swift */; };
+		E3802C9626A4C85C00FE7482 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3802C9526A4C85C00FE7482 /* LoginViewController.swift */; };
+		E3802C9826A4C92400FE7482 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3802C9726A4C92400FE7482 /* AnimationViewController.swift */; };
+		E3802C9A26A4CFDC00FE7482 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3802C9926A4CFDC00FE7482 /* Extenstions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		E315365626A38CB9002FFC5C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E315365826A38CC2002FFC5C /* ChatClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClient.swift; sourceTree = "<group>"; };
 		E315365A26A38CCD002FFC5C /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
+		E3802C9326A4C85300FE7482 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		E3802C9526A4C85C00FE7482 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E3802C9726A4C92400FE7482 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		E3802C9926A4CFDC00FE7482 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				E315364126A38C4B002FFC5C /* HomeViewController.swift */,
+				E3802C9326A4C85300FE7482 /* ChatViewController.swift */,
+				E3802C9526A4C85C00FE7482 /* LoginViewController.swift */,
+				E3802C9726A4C92400FE7482 /* AnimationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -112,6 +123,7 @@
 				E315363F26A38C4B002FFC5C /* SceneDelegate.swift */,
 				E315365826A38CC2002FFC5C /* ChatClient.swift */,
 				E315365A26A38CCD002FFC5C /* LoginClient.swift */,
+				E3802C9926A4CFDC00FE7482 /* Extenstions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,7 +201,11 @@
 				E315365B26A38CCD002FFC5C /* LoginClient.swift in Sources */,
 				E315364226A38C4B002FFC5C /* HomeViewController.swift in Sources */,
 				E315365726A38CB9002FFC5C /* Message.swift in Sources */,
+				E3802C9426A4C85300FE7482 /* ChatViewController.swift in Sources */,
+				E3802C9626A4C85C00FE7482 /* LoginViewController.swift in Sources */,
 				E315363E26A38C4B002FFC5C /* AppDelegate.swift in Sources */,
+				E3802C9A26A4CFDC00FE7482 /* Extenstions.swift in Sources */,
+				E3802C9826A4C92400FE7482 /* AnimationViewController.swift in Sources */,
 				E315365926A38CC2002FFC5C /* ChatClient.swift in Sources */,
 				E315364026A38C4B002FFC5C /* SceneDelegate.swift in Sources */,
 			);
