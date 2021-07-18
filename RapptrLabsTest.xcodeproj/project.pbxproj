@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		E315363E26A38C4B002FFC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315363D26A38C4B002FFC5C /* AppDelegate.swift */; };
 		E315364026A38C4B002FFC5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315363F26A38C4B002FFC5C /* SceneDelegate.swift */; };
-		E315364226A38C4B002FFC5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315364126A38C4B002FFC5C /* ViewController.swift */; };
+		E315364226A38C4B002FFC5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315364126A38C4B002FFC5C /* HomeViewController.swift */; };
 		E315364526A38C4B002FFC5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E315364326A38C4B002FFC5C /* Main.storyboard */; };
 		E315364726A38C4C002FFC5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E315364626A38C4C002FFC5C /* Assets.xcassets */; };
 		E315364A26A38C4C002FFC5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E315364826A38C4C002FFC5C /* LaunchScreen.storyboard */; };
+		E315365726A38CB9002FFC5C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315365626A38CB9002FFC5C /* Message.swift */; };
+		E315365926A38CC2002FFC5C /* ChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315365826A38CC2002FFC5C /* ChatClient.swift */; };
+		E315365B26A38CCD002FFC5C /* LoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315365A26A38CCD002FFC5C /* LoginClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E315363A26A38C4B002FFC5C /* RapptrLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapptrLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315363D26A38C4B002FFC5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E315363F26A38C4B002FFC5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E315364126A38C4B002FFC5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E315364126A38C4B002FFC5C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E315364426A38C4B002FFC5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E315364626A38C4C002FFC5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E315364926A38C4C002FFC5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E315364B26A38C4C002FFC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E315365626A38CB9002FFC5C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E315365826A38CC2002FFC5C /* ChatClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClient.swift; sourceTree = "<group>"; };
+		E315365A26A38CCD002FFC5C /* LoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		E315363C26A38C4B002FFC5C /* RapptrLabsTest */ = {
 			isa = PBXGroup;
 			children = (
-				E315363D26A38C4B002FFC5C /* AppDelegate.swift */,
-				E315363F26A38C4B002FFC5C /* SceneDelegate.swift */,
-				E315364126A38C4B002FFC5C /* ViewController.swift */,
-				E315364326A38C4B002FFC5C /* Main.storyboard */,
-				E315364626A38C4C002FFC5C /* Assets.xcassets */,
-				E315364826A38C4C002FFC5C /* LaunchScreen.storyboard */,
+				E315365126A38C61002FFC5C /* Models */,
+				E315365226A38C6B002FFC5C /* Views */,
+				E315365326A38C71002FFC5C /* ViewControllers */,
+				E315365526A38C7D002FFC5C /* Resources */,
+				E315365426A38C78002FFC5C /* Services */,
 				E315364B26A38C4C002FFC5C /* Info.plist */,
 			);
 			path = RapptrLabsTest;
+			sourceTree = "<group>";
+		};
+		E315365126A38C61002FFC5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E315365626A38CB9002FFC5C /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E315365226A38C6B002FFC5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E315364826A38C4C002FFC5C /* LaunchScreen.storyboard */,
+				E315364326A38C4B002FFC5C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E315365326A38C71002FFC5C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E315364126A38C4B002FFC5C /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E315365426A38C78002FFC5C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E315365526A38C7D002FFC5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E315364626A38C4C002FFC5C /* Assets.xcassets */,
+				E315363D26A38C4B002FFC5C /* AppDelegate.swift */,
+				E315363F26A38C4B002FFC5C /* SceneDelegate.swift */,
+				E315365826A38CC2002FFC5C /* ChatClient.swift */,
+				E315365A26A38CCD002FFC5C /* LoginClient.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E315364226A38C4B002FFC5C /* ViewController.swift in Sources */,
+				E315365B26A38CCD002FFC5C /* LoginClient.swift in Sources */,
+				E315364226A38C4B002FFC5C /* HomeViewController.swift in Sources */,
+				E315365726A38CB9002FFC5C /* Message.swift in Sources */,
 				E315363E26A38C4B002FFC5C /* AppDelegate.swift in Sources */,
+				E315365926A38CC2002FFC5C /* ChatClient.swift in Sources */,
 				E315364026A38C4B002FFC5C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
