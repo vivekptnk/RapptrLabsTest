@@ -89,6 +89,7 @@ class LoginViewController: UIViewController {
     func showEmptyFieldsAlert() {
         DispatchQueue.main.async {
             
+            // Add alert for missing email 
             let alert = UIAlertController(title: "Error", message: "Missing Email or Password!", preferredStyle: .alert)
             
             // add the ok action button
