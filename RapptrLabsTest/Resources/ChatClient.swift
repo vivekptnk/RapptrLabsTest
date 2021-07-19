@@ -42,26 +42,10 @@ import Foundation
  
  */
 
-
-
 /// Chat Client to fetch data from given JSON link
 class ChatClient {
     
-    // outer json response
-    struct Response : Codable {
-        let data : [ChatData]
-    }
-    
-    // inner json response
-    struct ChatData : Codable {
-        let user_id : String
-        let name : String
-        let avatar_url : String
-        let message : String
-    }
-    
-    
-    func getData() {
+    func getData(completionBlock : @escaping ([MessageData]) -> Void) -> Void {
         
         // URL Link
         let url = "https://dev.rapptrlabs.com/Tests/scripts/chat_log.php"

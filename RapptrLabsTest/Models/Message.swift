@@ -7,9 +7,15 @@
 
 import Foundation
 
-struct Message {
-    let userID : String
-    let userName : String
-    let userText : String
-    let userUrl : String
+// outer json response
+struct Response : Codable {
+    let data : [MessageData]
+}
+
+// inner json response
+struct MessageData : Codable {
+    let user_id : String
+    let name : String
+    let avatar_url : String
+    let message : String
 }
