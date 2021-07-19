@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Message {
+    let userID : String
+    let userName : String
+    let userText : String
+    let userUrl : String
+}

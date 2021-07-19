@@ -26,17 +26,17 @@ class HomeViewController: UIViewController {
     
     // Chat Button action
     @IBAction func chatButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToChat", sender: self)
+        self.performSegue(withIdentifier: "goToChat", sender: self) // segue to go to the ChatButtonController
     }
     
     // Login Button action
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToLogin", sender: self)
+        self.performSegue(withIdentifier: "goToLogin", sender: self) // segue to go to the LoginViewController
     }
     
     // Animation Button action
     @IBAction func animationButtonPressed(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToAnimation", sender: self)
+        self.performSegue(withIdentifier: "goToAnimation", sender: self) // segue to go to the AnimationViewController
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmN-Ga-JRa">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-aL-62t">
-                                <rect key="frame" x="30" y="420.5" width="354" height="55"/>
+                                <rect key="frame" x="30" y="420.66666666666669" width="354" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="tEe-DX-pBx"/>
@@ -33,11 +33,10 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Woc-hG-3bb"/>
-                                    <segue destination="XvA-ic-wJO" kind="show" identifier="goToLogin" animates="NO" id="lSN-vp-fTE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDt-zx-X39">
-                                <rect key="frame" x="30" y="341.5" width="354" height="55"/>
+                                <rect key="frame" x="30" y="341.66666666666669" width="354" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="PNa-Gc-WPx"/>
@@ -50,11 +49,10 @@
                                 </state>
                                 <connections>
                                     <action selector="chatButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKf-Yy-JgL"/>
-                                    <segue destination="hCz-dW-MhS" kind="show" identifier="goToChat" id="z0Q-oO-mOa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nf-5L-Hzd">
-                                <rect key="frame" x="30" y="499.5" width="354" height="55"/>
+                                <rect key="frame" x="30" y="499.66666666666674" width="354" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="I20-g6-KqD"/>
@@ -67,7 +65,6 @@
                                 </state>
                                 <connections>
                                     <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cic-xw-Vn2"/>
-                                    <segue destination="7hi-Be-TcS" kind="show" identifier="goToAnimation" id="OH3-jS-T2u"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,6 +93,9 @@
                         <outlet property="animationButton" destination="7Nf-5L-Hzd" id="r4I-1b-6cT"/>
                         <outlet property="chatButton" destination="cDt-zx-X39" id="O3p-6w-hQi"/>
                         <outlet property="loginButton" destination="jEv-aL-62t" id="obw-Iy-gcv"/>
+                        <segue destination="hCz-dW-MhS" kind="show" identifier="goToChat" id="iDP-OE-vV1"/>
+                        <segue destination="XvA-ic-wJO" kind="show" identifier="goToLogin" id="tiQ-ur-to3"/>
+                        <segue destination="7hi-Be-TcS" kind="show" identifier="goToAnimation" id="tNN-Q2-ihP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -134,12 +134,27 @@
                     <view key="view" contentMode="scaleToFill" id="c4h-sX-H29">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-p4-dNG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1J5-bo-cLC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oov-p4-dNG" firstAttribute="leading" secondItem="1J5-bo-cLC" secondAttribute="leading" id="31h-pI-srX"/>
+                            <constraint firstItem="1J5-bo-cLC" firstAttribute="trailing" secondItem="Oov-p4-dNG" secondAttribute="trailing" id="SEp-gM-fda"/>
+                            <constraint firstItem="Oov-p4-dNG" firstAttribute="top" secondItem="1J5-bo-cLC" secondAttribute="top" id="feV-dP-TGs"/>
+                            <constraint firstAttribute="bottom" secondItem="Oov-p4-dNG" secondAttribute="bottom" id="v0g-j0-xxo"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chat" largeTitleDisplayMode="never" id="qgH-BI-jqg">
                         <barButtonItem key="backBarButtonItem" title=" " id="CMk-ux-92O"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chatBoxTableView" destination="Oov-p4-dNG" id="2lb-3i-GXI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYJ-Pa-1lU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,17 +254,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MB3-76-ATR">
-                                <rect key="frame" x="10" y="196" width="394" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lTS-RX-5PO">
-                                        <rect key="frame" x="20" y="20" width="354" height="74"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-Yc-2QW">
                                 <rect key="frame" x="30" y="777" width="354" height="55"/>
                                 <color key="backgroundColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -258,14 +262,41 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="FADE IN"/>
+                                <connections>
+                                    <action selector="fadeInButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="V56-M9-FOY"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6ZQ-Kt-hTO">
+                                <rect key="frame" x="30" y="188" width="354" height="74"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALq-bz-6Lu">
+                                <rect key="frame" x="30" y="698" width="354" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="YBd-PX-41y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="FADE OUT">
+                                    <color key="titleColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fadeInButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="oAa-0M-w8L"/>
+                                    <action selector="fadeOutButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="aax-3Y-5QU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cHl-Ab-1MZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TDH-Yc-2QW" firstAttribute="trailing" secondItem="cHl-Ab-1MZ" secondAttribute="trailing" constant="-30" id="IXQ-Yj-Avf"/>
+                            <constraint firstItem="cHl-Ab-1MZ" firstAttribute="trailing" secondItem="ALq-bz-6Lu" secondAttribute="trailing" constant="30" id="OhL-87-mCQ"/>
+                            <constraint firstItem="TDH-Yc-2QW" firstAttribute="top" secondItem="ALq-bz-6Lu" secondAttribute="bottom" constant="24" id="SoZ-Yf-qGR"/>
                             <constraint firstItem="TDH-Yc-2QW" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="TIM-fm-E2x"/>
+                            <constraint firstItem="6ZQ-Kt-hTO" firstAttribute="top" secondItem="cHl-Ab-1MZ" secondAttribute="top" constant="100" id="Ze8-mw-gsr"/>
+                            <constraint firstItem="cHl-Ab-1MZ" firstAttribute="trailing" secondItem="6ZQ-Kt-hTO" secondAttribute="trailing" constant="30" id="ack-no-3AT"/>
+                            <constraint firstItem="ALq-bz-6Lu" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="p3I-ds-xh2"/>
                             <constraint firstItem="cHl-Ab-1MZ" firstAttribute="bottom" secondItem="TDH-Yc-2QW" secondAttribute="bottom" constant="30" id="w4F-y5-KfS"/>
+                            <constraint firstItem="6ZQ-Kt-hTO" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="yTM-l8-DoR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Animation" id="zty-uO-Ii2">
@@ -273,7 +304,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="fadeInButton" destination="TDH-Yc-2QW" id="qdv-4D-wKT"/>
-                        <outlet property="rapptrLogoView" destination="MB3-76-ATR" id="W5e-X1-M2g"/>
+                        <outlet property="fadeOutButton" destination="ALq-bz-6Lu" id="xWb-pF-eAe"/>
+                        <outlet property="rapptrLabsLogo" destination="6ZQ-Kt-hTO" id="8VZ-aW-Tib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkL-Pt-deS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

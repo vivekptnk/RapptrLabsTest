@@ -16,12 +16,16 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.setLeftPaddingPoints(24)
-        passwordTextField.setLeftPaddingPoints(24)
+        overrideUserInterfaceStyle = .light // changing UI style to Light mode
+        
+        // adding the padding to the left of the textFields
+        emailTextField.setLeftPaddingPoints(24) // for email
+        passwordTextField.setLeftPaddingPoints(24) // for password
     }
     
     // login button action
     @IBAction func loginPressed(_ sender: UIButton) {
+        
     }
     
 
