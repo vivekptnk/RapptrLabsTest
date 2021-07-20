@@ -93,14 +93,46 @@
                         <outlet property="animationButton" destination="7Nf-5L-Hzd" id="r4I-1b-6cT"/>
                         <outlet property="chatButton" destination="cDt-zx-X39" id="O3p-6w-hQi"/>
                         <outlet property="loginButton" destination="jEv-aL-62t" id="obw-Iy-gcv"/>
-                        <segue destination="hCz-dW-MhS" kind="show" identifier="goToChat" id="iDP-OE-vV1"/>
                         <segue destination="XvA-ic-wJO" kind="show" identifier="goToLogin" id="tiQ-ur-to3"/>
                         <segue destination="7hi-Be-TcS" kind="show" identifier="goToAnimation" id="tNN-Q2-ihP"/>
+                        <segue destination="amG-5R-ejH" kind="show" identifier="goToChat" id="8A8-b8-R07"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="871" y="93"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="q3l-Tz-X0o">
+            <objects>
+                <tableViewController id="amG-5R-ejH" customClass="ChatTableViewController" customModule="RapptrLabsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="On3-g3-SqB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="5Fc-6l-api">
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Fc-6l-api" id="BlI-Ad-Q0f">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="amG-5R-ejH" id="oaG-JZ-zit"/>
+                            <outlet property="delegate" destination="amG-5R-ejH" id="b7j-B6-5Sa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chat" id="Jm4-Ny-4vj"/>
+                    <connections>
+                        <outlet property="chatBoxTableView" destination="On3-g3-SqB" id="TkU-lT-W3j"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHZ-3I-RE1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="-801"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1lZ-2t-oNr">
@@ -127,39 +159,6 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
-        <!--Chat-->
-        <scene sceneID="mUf-l0-mZu">
-            <objects>
-                <viewController title="Chat" id="hCz-dW-MhS" customClass="ChatViewController" customModule="RapptrLabsTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c4h-sX-H29">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Oov-p4-dNG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="1J5-bo-cLC"/>
-                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Oov-p4-dNG" firstAttribute="leading" secondItem="1J5-bo-cLC" secondAttribute="leading" id="31h-pI-srX"/>
-                            <constraint firstItem="1J5-bo-cLC" firstAttribute="trailing" secondItem="Oov-p4-dNG" secondAttribute="trailing" id="SEp-gM-fda"/>
-                            <constraint firstItem="Oov-p4-dNG" firstAttribute="top" secondItem="1J5-bo-cLC" secondAttribute="top" id="feV-dP-TGs"/>
-                            <constraint firstAttribute="bottom" secondItem="Oov-p4-dNG" secondAttribute="bottom" id="v0g-j0-xxo"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Chat" largeTitleDisplayMode="never" id="qgH-BI-jqg">
-                        <barButtonItem key="backBarButtonItem" title=" " id="CMk-ux-92O"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="chatBoxTableView" destination="Oov-p4-dNG" id="2lb-3i-GXI"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SYJ-Pa-1lU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2390" y="-645"/>
-        </scene>
         <!--Login-->
         <scene sceneID="trK-Wx-zd0">
             <objects>
@@ -171,9 +170,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_login" translatesAutoresizingMaskIntoConstraints="NO" id="lZi-FJ-ydg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
-                            <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="info@rapptrlabs.com" borderStyle="roundedRect" placeholder="Email ID" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-JX-55B">
+                            <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-JX-55B">
                                 <rect key="frame" x="30" y="152" width="354" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="DLi-fg-8dB"/>
                                 </constraints>
@@ -186,9 +186,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test123" borderStyle="roundedRect" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-dA-8Fx">
+                            <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-dA-8Fx">
                                 <rect key="frame" x="30" y="231" width="354" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Vo2-1P-1OS"/>
                                 </constraints>

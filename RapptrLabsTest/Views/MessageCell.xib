@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="93" id="KGk-i7-Jjw" customClass="MessageCell" customModule="RapptrLabsTest">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1f7-xl-RWN">
+                        <rect key="frame" x="16" y="16" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1f7-xl-RWN" secondAttribute="height" multiplier="1:1" id="2en-6c-vjf"/>
+                            <constraint firstAttribute="height" constant="32" id="3cs-46-axO"/>
+                            <constraint firstAttribute="width" constant="32" id="l5n-zz-y89"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOi-v6-QCV">
+                        <rect key="frame" x="55" y="12" width="229" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKO-rK-QnO" customClass="PaddingLabel" customModule="RapptrLabsTest" customModuleProvider="target">
+                        <rect key="frame" x="55" y="35" width="229" height="46"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dOi-v6-QCV" secondAttribute="trailing" constant="36" id="4ux-kV-UWZ"/>
+                    <constraint firstItem="1f7-xl-RWN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="8yN-d5-sPs"/>
+                    <constraint firstItem="dOi-v6-QCV" firstAttribute="leading" secondItem="1f7-xl-RWN" secondAttribute="trailing" constant="7" id="JqP-PU-RZG"/>
+                    <constraint firstItem="1f7-xl-RWN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="KUJ-df-4Gf"/>
+                    <constraint firstItem="dOi-v6-QCV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Q05-Ge-bSQ"/>
+                    <constraint firstAttribute="bottom" secondItem="FKO-rK-QnO" secondAttribute="bottom" constant="12" id="ao3-W7-UqG"/>
+                    <constraint firstItem="FKO-rK-QnO" firstAttribute="leading" secondItem="dOi-v6-QCV" secondAttribute="leading" id="biS-FN-bLX"/>
+                    <constraint firstItem="FKO-rK-QnO" firstAttribute="top" secondItem="dOi-v6-QCV" secondAttribute="bottom" constant="7" id="lAS-cu-ztQ"/>
+                    <constraint firstAttribute="trailing" secondItem="FKO-rK-QnO" secondAttribute="trailing" constant="36" id="lrl-AA-l0k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="userImage" destination="1f7-xl-RWN" id="yyl-15-1Zf"/>
+                <outlet property="userMessage" destination="FKO-rK-QnO" id="CfK-gL-FgL"/>
+                <outlet property="userName" destination="dOi-v6-QCV" id="MKx-CG-cvL"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="124.88839285714285"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="FKO-rK-QnO">
+            <size key="intrinsicContentSize" width="37.5" height="18"/>
+        </designable>
+    </designables>
+</document>

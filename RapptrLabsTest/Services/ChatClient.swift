@@ -70,8 +70,11 @@ class ChatClient {
             
             // make sure if we recieved any data.
             guard let json = results else {return}
+            completionBlock(json.data)
+        }
+        
+        func downloadImageData(url : String, completion : @escaping () -> Void) -> Void {
             
-            print(json)
         }
         
         // trigger the operation.

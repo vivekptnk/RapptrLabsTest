@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 /**
  URL : http://dev.rapptrlabs.com/Tests/scripts/login.php
@@ -14,22 +14,16 @@ import Foundation
  RESPONSE :
  
  {
-    "code" : "Success",
-    "message" : "Login Sucessful!"
-    
+ "code" : "Success",
+ "message" : "Login Sucessful!"
+ 
  }
  
  */
-
-
 // Login client to check if the entered credentials is valid.
 class LoginClient {
     
-    struct loginAuthResponseData : Decodable {
-        let code : String
-        let message : String
-    }
-    
+    // login auth for POST request.
     func loginAuth(email: String, passsword: String, completionBlock : @escaping (Bool) -> Void) -> Void  {
         // prepare the login url
         let url = URL(string: "http://dev.rapptrlabs.com/Tests/scripts/login.php")
@@ -61,14 +55,14 @@ class LoginClient {
                 print("Error getting response data")
                 return
             }
-           
-           // initiate result variable of type loginAuthResponseData
+            
+            // initiate result variable of type loginAuthResponseData
             var dataResponse : loginAuthResponseData?
             
             // decode data
             do {
                 dataResponse = try JSONDecoder().decode(loginAuthResponseData.self, from: data)
-               
+                
             } catch {
                 print("failed to deocde your login auth response data")
             }
@@ -78,7 +72,7 @@ class LoginClient {
             
             dataValidatedBoolean = self.loginValidation(authResponse: dataResponse!)
             completionBlock(dataValidatedBoolean)
-
+            
         }
         task.resume()
     }
@@ -89,10 +83,10 @@ class LoginClient {
         if authResponse.code == "Success" && authResponse.message == "Login Successful!" {
             return true
         } else {
-            print(authResponse.code)
-            print(authResponse.message)
             return false
         }
     }
+    
+    
     
 }
