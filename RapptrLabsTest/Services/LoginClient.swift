@@ -71,6 +71,8 @@ class LoginClient {
             guard dataResponse != nil else {return}
             
             dataValidatedBoolean = self.loginValidation(authResponse: dataResponse!)
+            
+            // return the boolean that decides if the whole handshake is validated
             completionBlock(dataValidatedBoolean)
             
         }

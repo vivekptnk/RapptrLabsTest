@@ -70,6 +70,8 @@ class ChatClient {
             
             // make sure if we recieved any data.
             guard let json = results else {return}
+            
+            // returning the completion block data 
             completionBlock(json.data)
         }
         
