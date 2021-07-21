@@ -45,6 +45,7 @@ public extension UIView {
     
 }
 
+// UI Image to make a circle mask on the avatars
 extension UIImage {
     var circleMask: UIImage? {
         let square = CGSize(width: min(size.width, size.height), height: min(size.width, size.height))
@@ -58,5 +59,25 @@ extension UIImage {
         guard let context = UIGraphicsGetCurrentContext() else { return nil }
         imageView.layer.render(in: context)
         return UIGraphicsGetImageFromCurrentImageContext()
+    }
+    
+    
+}
+
+// Load images for avatar url 
+extension UIImageView {
+    func loadImage(imageURL : String) {
+        guard let url = URL(string: imageURL) else {
+            return
+        }
+        DispatchQueue.global().async { [weak self] in
+            if let data  = try? Data(contentsOf: url) {
+                if let image  = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image.circleMask
+                    }
+                }
+            }
+        }
     }
 }

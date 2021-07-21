@@ -22,7 +22,6 @@
 		E385274326A664AC00E4415E /* LoginPOSTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E385274226A664AC00E4415E /* LoginPOSTResponse.swift */; };
 		E38E258B26A6852300CF3D01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38E258A26A6852300CF3D01 /* Main.storyboard */; };
 		E38E258D26A713EB00CF3D01 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E258C26A713EB00CF3D01 /* ChatTableViewController.swift */; };
-		E38E259326A71E3400CF3D01 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E259226A71E3400CF3D01 /* ChatMessageCell.swift */; };
 		E38E259626A74A9D00CF3D01 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E259426A74A9D00CF3D01 /* MessageCell.swift */; };
 		E38E259726A74A9D00CF3D01 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38E259526A74A9D00CF3D01 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		E385274226A664AC00E4415E /* LoginPOSTResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPOSTResponse.swift; sourceTree = "<group>"; };
 		E38E258A26A6852300CF3D01 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E38E258C26A713EB00CF3D01 /* ChatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
-		E38E259226A71E3400CF3D01 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		E38E259426A74A9D00CF3D01 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E38E259526A74A9D00CF3D01 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +112,6 @@
 			children = (
 				E315364126A38C4B002FFC5C /* HomeViewController.swift */,
 				E38E259426A74A9D00CF3D01 /* MessageCell.swift */,
-				E38E259226A71E3400CF3D01 /* ChatMessageCell.swift */,
 				E3802C9526A4C85C00FE7482 /* LoginViewController.swift */,
 				E3802C9726A4C92400FE7482 /* AnimationViewController.swift */,
 				E38E258C26A713EB00CF3D01 /* ChatTableViewController.swift */,
@@ -219,7 +216,6 @@
 				E315364226A38C4B002FFC5C /* HomeViewController.swift in Sources */,
 				E315365726A38CB9002FFC5C /* Message.swift in Sources */,
 				E3802C9626A4C85C00FE7482 /* LoginViewController.swift in Sources */,
-				E38E259326A71E3400CF3D01 /* ChatMessageCell.swift in Sources */,
 				E315363E26A38C4B002FFC5C /* AppDelegate.swift in Sources */,
 				E3802C9A26A4CFDC00FE7482 /* Extenstions.swift in Sources */,
 				E343721E26A75495000888EA /* PaddingLabelUI.swift in Sources */,

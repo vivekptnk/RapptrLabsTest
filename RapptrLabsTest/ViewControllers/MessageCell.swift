@@ -20,12 +20,9 @@ class MessageCell: UITableViewCell {
         userMessage.layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0) // set the background color
         userMessage.layer.cornerRadius = 8 // set the corner radius
         userMessage.layer.masksToBounds = true // this will make sure that the corner radius bounds are all color of the layerBG
-        userMessage.layer.borderWidth = 1
-        userMessage.layer.borderColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1)
+        userMessage.layer.borderWidth = 1 // set the borderwidth
+        userMessage.layer.borderColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1) // set the border color to design specs.
         
-        // set image to circle
-        userImage.layer.masksToBounds = true
-        userImage.layer.cornerRadius = userImage.bounds.width / 2
 
     }
 
