@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85EA3D4EE0A2A0D2671A2BDB /* Pods_RapptrLabsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D016AFC214463F80F39A9EFE /* Pods_RapptrLabsTest.framework */; };
 		E315363E26A38C4B002FFC5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315363D26A38C4B002FFC5C /* AppDelegate.swift */; };
 		E315364026A38C4B002FFC5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315363F26A38C4B002FFC5C /* SceneDelegate.swift */; };
 		E315364226A38C4B002FFC5C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E315364126A38C4B002FFC5C /* HomeViewController.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9DD9FE0E05A0987B9EA46BCE /* Pods-RapptrLabsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapptrLabsTest.debug.xcconfig"; path = "Target Support Files/Pods-RapptrLabsTest/Pods-RapptrLabsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C84651C597CCECA6BB65202C /* Pods-RapptrLabsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapptrLabsTest.release.xcconfig"; path = "Target Support Files/Pods-RapptrLabsTest/Pods-RapptrLabsTest.release.xcconfig"; sourceTree = "<group>"; };
+		D016AFC214463F80F39A9EFE /* Pods_RapptrLabsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RapptrLabsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315363A26A38C4B002FFC5C /* RapptrLabsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapptrLabsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E315363D26A38C4B002FFC5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E315363F26A38C4B002FFC5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,17 +57,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EA3D4EE0A2A0D2671A2BDB /* Pods_RapptrLabsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029122D299997ADA64D4F60A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD9FE0E05A0987B9EA46BCE /* Pods-RapptrLabsTest.debug.xcconfig */,
+				C84651C597CCECA6BB65202C /* Pods-RapptrLabsTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A072EAF26172461C7CCC71F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D016AFC214463F80F39A9EFE /* Pods_RapptrLabsTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E315363126A38C4B002FFC5C = {
 			isa = PBXGroup;
 			children = (
 				E315363C26A38C4B002FFC5C /* RapptrLabsTest */,
 				E315363B26A38C4B002FFC5C /* Products */,
+				029122D299997ADA64D4F60A /* Pods */,
+				A072EAF26172461C7CCC71F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E315364E26A38C4C002FFC5C /* Build configuration list for PBXNativeTarget "RapptrLabsTest" */;
 			buildPhases = (
+				CE68E21BA0DB2EF2E55A8803 /* [CP] Check Pods Manifest.lock */,
 				E315363626A38C4B002FFC5C /* Sources */,
 				E315363726A38C4B002FFC5C /* Frameworks */,
 				E315363826A38C4B002FFC5C /* Resources */,
+				C36D41B37C34A9C3C32B4468 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +232,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C36D41B37C34A9C3C32B4468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RapptrLabsTest/Pods-RapptrLabsTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RapptrLabsTest/Pods-RapptrLabsTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RapptrLabsTest/Pods-RapptrLabsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE68E21BA0DB2EF2E55A8803 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RapptrLabsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E315363626A38C4B002FFC5C /* Sources */ = {
@@ -359,6 +428,7 @@
 		};
 		E315364F26A38C4C002FFC5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD9FE0E05A0987B9EA46BCE /* Pods-RapptrLabsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -372,12 +442,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Vivek-Pattanaik.RapptrLabsTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E315365026A38C4C002FFC5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84651C597CCECA6BB65202C /* Pods-RapptrLabsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -391,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Vivek-Pattanaik.RapptrLabsTest";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

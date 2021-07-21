@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmN-Ga-JRa">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController title="HomeViewController" id="BYZ-38-t0r" userLabel="HomeViewController" customClass="HomeViewController" customModule="RapptrLabsTest" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="fRX-0B-of7">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEv-aL-62t">
-                                <rect key="frame" x="30" y="394.66666666666669" width="330" height="55"/>
+                                <rect key="frame" x="30" y="306" width="315" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="tEe-DX-pBx"/>
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDt-zx-X39">
-                                <rect key="frame" x="30" y="315.66666666666669" width="330" height="55"/>
+                                <rect key="frame" x="30" y="227" width="315" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="PNa-Gc-WPx"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nf-5L-Hzd">
-                                <rect key="frame" x="30" y="473.66666666666669" width="330" height="55.000000000000057"/>
+                                <rect key="frame" x="30" y="385" width="315" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="I20-g6-KqD"/>
@@ -107,15 +107,15 @@
             <objects>
                 <tableViewController id="amG-5R-ejH" customClass="ChatTableViewController" customModule="RapptrLabsTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="On3-g3-SqB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="5Fc-6l-api">
-                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Fc-6l-api" id="BlI-Ad-Q0f">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -140,7 +140,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xmN-Ga-JRa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x8I-ko-3xZ">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -164,14 +164,14 @@
             <objects>
                 <viewController id="XvA-ic-wJO" customClass="LoginViewController" customModule="RapptrLabsTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C5O-Ye-gTi">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_login" translatesAutoresizingMaskIntoConstraints="NO" id="lZi-FJ-ydg">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
                             <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email ID" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="EC9-JX-55B">
-                                <rect key="frame" x="30" y="152" width="330" height="55"/>
+                                <rect key="frame" x="30" y="108" width="315" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -187,7 +187,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Vfz-dA-8Fx">
-                                <rect key="frame" x="30" y="231" width="330" height="55"/>
+                                <rect key="frame" x="30" y="187" width="315" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.10588235294117647" green="0.11764705882352941" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -203,7 +203,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-wC-P7M">
-                                <rect key="frame" x="30" y="310" width="330" height="55"/>
+                                <rect key="frame" x="30" y="266" width="315" height="55"/>
                                 <color key="backgroundColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="n4s-Dv-GOb"/>
@@ -252,11 +252,11 @@
             <objects>
                 <viewController id="7hi-Be-TcS" customClass="AnimationViewController" customModule="RapptrLabsTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HoU-io-go3">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDH-Yc-2QW">
-                                <rect key="frame" x="30" y="725" width="330" height="55"/>
+                                <rect key="frame" x="30" y="582" width="315" height="55"/>
                                 <color key="backgroundColor" red="0.054901960780000002" green="0.36078431370000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="C4G-MH-V4v"/>
@@ -267,11 +267,11 @@
                                     <action selector="fadeInButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="V56-M9-FOY"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6ZQ-Kt-hTO">
-                                <rect key="frame" x="30" y="188" width="330" height="74"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="6ZQ-Kt-hTO">
+                                <rect key="frame" x="30" y="244" width="315" height="74"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALq-bz-6Lu">
-                                <rect key="frame" x="30" y="646" width="330" height="55"/>
+                                <rect key="frame" x="30" y="503" width="315" height="55"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="YBd-PX-41y"/>
@@ -285,16 +285,36 @@
                                     <action selector="fadeOutButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="aax-3Y-5QU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9F-ja-hF3">
+                                <rect key="frame" x="30" y="424" width="315" height="55"/>
+                                <color key="backgroundColor" red="1" green="0.71136752434283979" blue="0.28700944575527143" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="nRd-Ls-mht"/>
+                                    <constraint firstAttribute="height" constant="55" id="xy6-fy-OHA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="CONFETTI TIME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confettiTimeButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="0eu-yQ-v7H"/>
+                                    <action selector="fadeInButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="0Oh-40-inF"/>
+                                    <action selector="fadeOutButtonPressed:" destination="7hi-Be-TcS" eventType="touchUpInside" id="B3m-qv-1bS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cHl-Ab-1MZ"/>
                         <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TDH-Yc-2QW" firstAttribute="trailing" secondItem="cHl-Ab-1MZ" secondAttribute="trailing" constant="-30" id="IXQ-Yj-Avf"/>
+                            <constraint firstItem="ALq-bz-6Lu" firstAttribute="top" secondItem="i9F-ja-hF3" secondAttribute="bottom" constant="24" id="MPo-H8-7Ed"/>
                             <constraint firstItem="cHl-Ab-1MZ" firstAttribute="trailing" secondItem="ALq-bz-6Lu" secondAttribute="trailing" constant="30" id="OhL-87-mCQ"/>
+                            <constraint firstItem="i9F-ja-hF3" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="Qxn-IC-bX5"/>
                             <constraint firstItem="TDH-Yc-2QW" firstAttribute="top" secondItem="ALq-bz-6Lu" secondAttribute="bottom" constant="24" id="SoZ-Yf-qGR"/>
                             <constraint firstItem="TDH-Yc-2QW" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="TIM-fm-E2x"/>
-                            <constraint firstItem="6ZQ-Kt-hTO" firstAttribute="top" secondItem="cHl-Ab-1MZ" secondAttribute="top" constant="100" id="Ze8-mw-gsr"/>
+                            <constraint firstItem="6ZQ-Kt-hTO" firstAttribute="top" secondItem="cHl-Ab-1MZ" secondAttribute="top" constant="200" id="Ze8-mw-gsr"/>
                             <constraint firstItem="cHl-Ab-1MZ" firstAttribute="trailing" secondItem="6ZQ-Kt-hTO" secondAttribute="trailing" constant="30" id="ack-no-3AT"/>
+                            <constraint firstItem="cHl-Ab-1MZ" firstAttribute="trailing" secondItem="i9F-ja-hF3" secondAttribute="trailing" constant="30" id="cXb-JR-qL9"/>
                             <constraint firstItem="ALq-bz-6Lu" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="p3I-ds-xh2"/>
                             <constraint firstItem="cHl-Ab-1MZ" firstAttribute="bottom" secondItem="TDH-Yc-2QW" secondAttribute="bottom" constant="30" id="w4F-y5-KfS"/>
                             <constraint firstItem="6ZQ-Kt-hTO" firstAttribute="leading" secondItem="cHl-Ab-1MZ" secondAttribute="leading" constant="30" id="yTM-l8-DoR"/>
@@ -304,6 +324,7 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="f6G-da-dLc"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="confettiTimeButton" destination="i9F-ja-hF3" id="lFR-Qi-Ljy"/>
                         <outlet property="fadeInButton" destination="TDH-Yc-2QW" id="qdv-4D-wKT"/>
                         <outlet property="fadeOutButton" destination="ALq-bz-6Lu" id="xWb-pF-eAe"/>
                         <outlet property="rapptrLabsLogo" destination="6ZQ-Kt-hTO" id="8VZ-aW-Tib"/>
@@ -311,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkL-Pt-deS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2446" y="693"/>
+            <point key="canvasLocation" x="2444.6153846153848" y="692.41706161137438"/>
         </scene>
     </scenes>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
