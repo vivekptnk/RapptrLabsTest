@@ -95,7 +95,6 @@ class LoginViewController: UIViewController {
             // add the ok action button
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             
-            
             // show the alert
             self.present(alert,animated: true)
         }
@@ -103,10 +102,14 @@ class LoginViewController: UIViewController {
     
     func showErrorAlert() {
         DispatchQueue.main.async {
+            // Add alert for error
             let alert = UIAlertController(title: "Error", message: "Incorrect Email or Password!", preferredStyle: .alert)
+            
+            // add the ok action button
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil
             ))
             
+            // show the alert
             self.present(alert, animated: true)
         }
     }

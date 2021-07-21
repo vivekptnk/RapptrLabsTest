@@ -30,17 +30,15 @@ class AnimationViewController: UIViewController {
     // fade in button action
     @IBAction func fadeInButtonPressed(_ sender: UIButton) {
         
-        // add the image to a subview to conform to the extension of fadeIn animation check Extensions.swift for more.
-        rapptrLabsLogo.alpha = 0 // for demonstration purposes 
-        self.view.addSubview(rapptrLabsLogo)
-        rapptrLabsLogo.fadeIn()
+        // add the image to a subview to conform to the extension of fadeIn animation check Extensions.swift for more
+        self.view.addSubview(rapptrLabsLogo) // add subview
+        rapptrLabsLogo.fadeIn() // simulate the fade in
         
     }
     
     @IBAction func fadeOutButtonPressed(_ sender: UIButton) {
         // add the image to a subview to conform to the extension of fadeOut animation check Extensions.swift for more.
-        rapptrLabsLogo.alpha = 1
-        self.view.addSubview(rapptrLabsLogo)
-        rapptrLabsLogo.fadeOut()
+        self.view.addSubview(rapptrLabsLogo) // add subview
+        rapptrLabsLogo.fadeOut() // simulate the fade out 
     }
 }

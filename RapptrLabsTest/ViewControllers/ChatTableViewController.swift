@@ -54,17 +54,15 @@ extension ChatTableViewController : UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! MessageCell
+        // give the cell data
+        cell.userMessage.text = messages?[indexPath.row].message
+        cell.userName.text = messages?[indexPath.row].name
         
         // download the url data using an extension
         if let url = messages?[indexPath.row].avatar_url{
             cell.userImage.loadImage(imageURL: url)
-        } else {
-            cell.userImage.image = UIImage(systemName: <#T##String#>)
         }
 
-        // give the cell data
-        cell.userMessage.text = messages?[indexPath.row].message
-        cell.userName.text = messages?[indexPath.row].name
         
         return cell
 

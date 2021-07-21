@@ -22,8 +22,6 @@ class MessageCell: UITableViewCell {
         userMessage.layer.masksToBounds = true // this will make sure that the corner radius bounds are all color of the layerBG
         userMessage.layer.borderWidth = 1 // set the borderwidth
         userMessage.layer.borderColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.937254902, alpha: 1) // set the border color to design specs.
-        
-
     }
 
    

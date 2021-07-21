@@ -73,10 +73,6 @@ class ChatClient {
             completionBlock(json.data)
         }
         
-        func downloadImageData(url : String, completion : @escaping () -> Void) -> Void {
-            
-        }
-        
         // trigger the operation.
         urlSession.resume()
     }
